@@ -1,6 +1,33 @@
-# MyAppWithNem
+# ng2AppWithNem
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
+
+## Patch for Webpack configuration
+
+- https://github.com/44uk/ng2-with-nem-sample/commit/9306eabc4cf2d474aaec0184fdda3d741e5dc851
+
+`/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs/browser.js`
+
+replace
+
+```js
+node: false,
+```
+
+with
+
+```js
+node: {
+  module: 'empty',
+  dgram: 'empty',
+  dns: 'mock',
+  fs: 'empty',
+  http2: 'empty',
+  net: 'empty',
+  tls: 'empty',
+  child_process: 'empty',
+},
+```
 
 ## Development server
 
