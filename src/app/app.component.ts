@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import {
   Account, NetworkType
-} from 'nem2-sdk'
+} from 'symbol-sdk'
 
 
 @Component({
@@ -16,6 +16,10 @@ export class AppComponent implements OnInit {
   account: Account
 
   ngOnInit() {
-    this.account = Account.generateNewAccount(NetworkType.MIJIN_TEST)
+    this.generateNewAccount()
+  }
+
+  generateNewAccount() {
+    this.account = Account.generateNewAccount(NetworkType.TEST_NET)
   }
 }

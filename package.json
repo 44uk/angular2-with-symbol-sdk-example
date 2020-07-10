@@ -20,8 +20,8 @@
     "@angular/platform-browser": "~9.1.12",
     "@angular/platform-browser-dynamic": "~9.1.12",
     "@angular/router": "~9.1.12",
-    "nem2-sdk": "^0.15.0",
     "rxjs": "~6.6.0",
+    "symbol-sdk": "^0.20.6",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },

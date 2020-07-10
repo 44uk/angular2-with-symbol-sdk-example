@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-app-with-nem"
+    }
+  },
+  "defaultProject": "my-app-with-nem",
+  "cli": {
+    "analytics": "a5b25b59-2bf1-4b18-9988-63cca7ff9ce5"
+  }
 }
