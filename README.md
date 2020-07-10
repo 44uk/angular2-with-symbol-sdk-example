@@ -1,10 +1,10 @@
-# ng2AppWithNem
+# Angular2 App with Symbol-SDK sample.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
 
-## Patch for Webpack configuration
+## Patching for Webpack configuration
 
-- https://github.com/44uk/ng2-with-nem-sample/commit/9306eabc4cf2d474aaec0184fdda3d741e5dc851
+- https://github.com/44uk/ng2-with-symbol-sdk-sample/tree/master/patches
 
 `/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs/browser.js`
 
