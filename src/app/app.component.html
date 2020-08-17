@@ -349,11 +349,15 @@
 
   </div>
 
-  <button type="button" (click)="generateNewAccount()">Push Me!</button>
   <h2>Generated Account!</h2>
+  <button type="button" (click)="generateNewAccount()">Push Me!</button>
   <p><code>PrivateKey: {{ account.privateKey }}</code></p>
   <p><code>PublicKey : {{ account.publicKey }}</code></p>
   <p><code>Address   : {{ account.address.pretty() }}</code></p>
+
+  <h2>Create and Sign Transaction!</h2>
+  <button type="button" (click)="createTransaction()">Push Me!</button>
+  <p><code>Payload: {{ signedTx.payload }}</code></p>
 
   <!-- Resources -->
   <h2>Resources</h2>
