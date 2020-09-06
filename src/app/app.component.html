@@ -349,15 +349,24 @@
 
   </div>
 
+  <h2>Latest Block</h2>
+  <ng-container *ngIf="newBlock$ | async as newBlock">
+  <p><code>Height: {{ newBlock.height }}</code></p>
+  </ng-container>
+
   <h2>Generated Account!</h2>
-  <button type="button" (click)="generateNewAccount()">Push Me!</button>
+  <button type="button" (click)="generateNewAccount()">Generate New Account</button>
+  <ng-container *ngIf="account">
   <p><code>PrivateKey: {{ account.privateKey }}</code></p>
   <p><code>PublicKey : {{ account.publicKey }}</code></p>
   <p><code>Address   : {{ account.address.pretty() }}</code></p>
+  </ng-container>
 
   <h2>Create and Sign Transaction!</h2>
-  <button type="button" (click)="createTransaction()">Push Me!</button>
+  <button type="button" (click)="createTransaction()" [disabled]="!account">Create Transaction</button>
+  <ng-container *ngIf="signedTx">
   <p><code>Payload: {{ signedTx.payload }}</code></p>
+  </ng-container>
 
   <!-- Resources -->
   <h2>Resources</h2>
