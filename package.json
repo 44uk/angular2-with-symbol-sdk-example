@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~11.0.9",
     "@angular/router": "~11.0.9",
     "rxjs": "~6.6.2",
-    "symbol-sdk": "^0.22.2",
+    "symbol-sdk": "^0.23.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
