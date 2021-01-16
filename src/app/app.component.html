@@ -349,9 +349,9 @@
 
   </div>
 
-  <h2>Latest Block</h2>
+  <h2>Latest Block Height</h2>
   <ng-container *ngIf="newBlock$ | async as newBlock">
-  <p><code>Height: {{ newBlock.height }}</code></p>
+  <p><code>Current: {{ newBlock.height }}</code></p>
   </ng-container>
 
   <h2>Generated Account!</h2>

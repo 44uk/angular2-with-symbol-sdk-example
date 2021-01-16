@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   listener: IListener
   newBlock$: Observable<NewBlock>
 
-  private gatewayURL = "http://api-01.ap-northeast-1.0.10.0.x.symboldev.network:3000"
+  private gatewayURL = "http://api-01.ap-northeast-1.testnet.symboldev.network:3000"
 
   ngOnInit() {
     const repositoryFactory = new RepositoryFactoryHttp(
