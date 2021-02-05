@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  gatewayURL: 'http://api-01.ap-northeast-1.testnet.symboldev.network:3000'
 };
 
 /*

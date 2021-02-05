@@ -11,6 +11,7 @@ import {
   concatMap, tap
 } from "rxjs/operators"
 
+import { environment as env } from './../environments/environment'
 
 @Component({
   selector: 'app-root',
@@ -27,7 +28,7 @@ export class AppComponent implements OnInit {
   listener: IListener
   newBlock$: Observable<NewBlock>
 
-  private gatewayURL = "http://api-01.ap-northeast-1.testnet.symboldev.network:3000"
+  private gatewayURL = env.gatewayURL
 
   ngOnInit() {
     const repositoryFactory = new RepositoryFactoryHttp(
