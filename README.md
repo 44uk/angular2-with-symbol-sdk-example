@@ -5,8 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Patching for Webpack configuration
 
 - https://github.com/44uk/ng2-with-symbol-sdk-sample/tree/master/patches
-
-`/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs/browser.js`
+- `/node_modules/@angular-devkit/build-angular/src/webpack/configs/browser.js`
 
 replace
 
@@ -18,14 +17,11 @@ with
 
 ```js
 node: {
-  module: 'empty',
-  dgram: 'empty',
-  dns: 'mock',
-  fs: 'empty',
-  http2: 'empty',
-  net: 'empty',
-  tls: 'empty',
-  child_process: 'empty',
+  crypto: true,
+  http: true,
+  https: true,
+  stream: true,
+  ws: true,
 },
 ```
 
